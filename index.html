@@ -1,16 +1,43 @@
-<!DOCTYPE html> //문서형 정의, 렌더링모드 설정
+<!DOCTYPE html>
 <html lang="ko">
 
 <head>
   <meta charset="UTF-8">
-  <title>hello</title>
+  <meta name="viewport" content="width=device-width, initial-sclae=1">
+  <title>Hello HTML</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>//header+nav+main+footer{}다음 tab 키
-  <header class="header">헤더</header>
-  <nav class="navigation">메뉴</nav>
-  <main class="main">콘텐츠</main>//main태그만 1번사용가능
-  <footer class="footer">푸터</footer>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="logo">
+        <a href="#">
+          <img src="images/logo.png" alt="web cafe" class="responsive">
+        </a>
+      </h1>
+      <ul class="member">
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#">커뮤니티</a></li>
+      </ul>
+      <form action="javascript:confirm('검색이 완료되었습니다.');" class="search-form">
+        <fieldset>
+          <legend>검색 폼</legend>
+          <div class="search-wrap">
+            <label for="keyword">검색어</label>
+            <input type="search" class="search" id="keyword" placeholder="검색어를 입력하세요." required>
+            <button type="submit" class="btn-search">검색</button>
+          </div>
+        </fieldset>
+      </form>
+    </header>
+    <nav class="navigation">
+      메뉴
+    </nav>
+    <main class="main">콘텐츠</main>
+    <footer class="footer">푸터</footer>
+  </div>
 </body>
 
 </html>
